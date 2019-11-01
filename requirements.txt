@@ -1,0 +1,2 @@
+PyYAML>=3.12
+msc-pyparser>=0.2
