@@ -25,7 +25,9 @@ class Beautifier(object):
                 # save the original lineno, check later the action's lineno
                 # if they are equals, it means that rule is in one line
                 lineno = d['lineno']
-                d['oplineno'] += self.offset
+                last_lineno = lineno
+                if 'oplineno' in d:
+                    d['oplineno'] += self.offset
                 d['lineno'] += self.offset
                 if "actions" in d:
                     aidx = 0

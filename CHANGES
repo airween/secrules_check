@@ -1,0 +1,9 @@
+v0.2 - YYYY-MM-DD
+-----------------
+  * Added CHANGES file
+  * Fix unbound variable error in beautifier method
+  * Show filenames in error messages of the check result
+
+v0.1 - 2019-11-01
+-----------------
+  * Initial release

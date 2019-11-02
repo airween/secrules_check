@@ -202,9 +202,9 @@ if __name__ == "__main__":
         c.check_ignore_case()
         c.check_action_order()
         for a in c.caseerror:
-            print(a)
+            print("In file: %s - error: %s" % (cf, a))
             casecnt += 1
         for a in c.orderacts:
-            print("Rule ID: {}, action '{}' at pos {} is wrong place against '{}' at pos {}".format(*a))
+            print("In file: %s - rule ID: {}, action '{}' at pos {} is wrong place against '{}' at pos {}".format(*a) % (cf))
             ordercnt += 1
     sys.exit(-1*(ordercnt + casecnt))
